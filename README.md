@@ -117,4 +117,4 @@ docker-compose exec web python manage.py loaddata fixtures.json
 Антон Акулов - https://github.com/Nekustetnaz
 ```
 
-![project workflow](https://github.com/IgorArefev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?event=push)
+![project workflow](https://github.com/IgorArefev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
