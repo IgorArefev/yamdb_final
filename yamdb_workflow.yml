@@ -45,7 +45,8 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: djifrost/yamdb:latest
+        file: api_yamdb/Dockerfile
+        tags: ${{ secrets.DOCKER_USERNAME }}/yamdb:latest
 
   deploy:
     runs-on: ubuntu-latest
