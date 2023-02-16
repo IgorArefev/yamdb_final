@@ -92,7 +92,7 @@ def get_current_user(request):
             serializer.save()
             return Response(serializer.data)
         serializer.save()
-        return Response(serializer.data)
+    return Response(serializer.data)
 
 
 class UsersViewSet(viewsets.ModelViewSet):
