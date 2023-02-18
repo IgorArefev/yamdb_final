@@ -1,4 +1,4 @@
-name: yamdb_workflow
+name: yamdb_workflow test
 
 on: [push]
 
