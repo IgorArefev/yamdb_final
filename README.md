@@ -106,9 +106,19 @@ sudo docker-compose exec web bash
 ```
 Выполнить в открывшемся терминале:
 ```
->>> from django.contrib.contenttypes.models import ContentType
->>> ContentType.objects.all().delete()
->>> quit()
+python3 manage.py shell
+```
+```
+from django.contrib.contenttypes.models import ContentType
+```
+```
+ContentType.objects.all().delete()
+```
+```
+quit()
+```
+```
+exit
 ```
 Заполняем базу данными
 ```
@@ -123,4 +133,4 @@ sudo docker-compose exec web python manage.py loaddata fixtures.json
 Антон Акулов - https://github.com/Nekustetnaz
 ```
 
-[![yamdb_workflow](https://github.com/IgorArefev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)]
+![yamdb_workflow](https://github.com/IgorArefev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
