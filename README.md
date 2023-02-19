@@ -134,3 +134,7 @@ sudo docker-compose exec web python manage.py loaddata fixtures.json
 ```
 
 ![yamdb_workflow](https://github.com/IgorArefev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
+1) [api/v1/](http://51.250.108.254/api/v1/)
+2) [admin](http://51.250.108.254/admin)
+3) [redoc](http://51.250.108.254/redoc)
