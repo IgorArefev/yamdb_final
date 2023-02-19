@@ -82,21 +82,27 @@ sudo docker-compose up
 
 После сборки контейнеров:
 ```
-docker-compose exec web python manage.py makemigrations
-docker-compose exec web python manage.py migrate
-docker-compose exec web python manage.py createsuperuser
-docker-compose exec web python manage.py collectstatic --no-input
+sudo docker-compose exec web python manage.py makemigrations
+```
+```
+sudo docker-compose exec web python manage.py migrate
+```
+```
+sudo docker-compose exec web python manage.py createsuperuser
+```
+```
+sudo docker-compose exec web python manage.py collectstatic --no-input
 ```
 
 ### Команды для заполнения базы данными:
 
 Сброс БД
 ```
-docker-compose exec web python manage.py flush
+sudo docker-compose exec web python manage.py flush
 ```
 Запускаем терминал
 ```
-docker-compose exec web bash
+sudo docker-compose exec web bash
 ```
 Выполнить в открывшемся терминале:
 ```
@@ -106,7 +112,7 @@ docker-compose exec web bash
 ```
 Заполняем базу данными
 ```
-docker-compose exec web python manage.py loaddata fixtures.json
+sudo docker-compose exec web python manage.py loaddata fixtures.json
 ```
 
 
